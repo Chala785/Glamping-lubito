@@ -213,6 +213,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
+    padding-top: 70px;
 }
 
 .card-badge {
@@ -231,6 +232,8 @@ body {
 .card-emoji {
     font-size: 3rem;
     margin-bottom: 18px;
+    line-height: 1.3;
+    overflow: visible;
 }
 
 .card-title {
