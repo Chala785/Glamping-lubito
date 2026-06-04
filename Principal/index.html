@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamping Lubito</title>
+    <meta name="description" content="Glamping Lubito — Vive una experiencia única en medio del bosque en Retiro, Antioquia. Domos, cabañas y naturaleza a 40 minutos de Medellín.">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!---Favicon-->
+    <link rel="icon" href="IMG/Logo.jpeg" type="image/x-icon">
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="brand">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 4 C10 8, 6 10, 8 16 C10 12, 13 11, 14 8 C15 11, 18 12, 20 16 C22 10, 18 8, 14 4Z" fill="#7a9a5a"/>
+                <path d="M11 10 C8 13, 6 16, 8 21 C10 17, 12 16, 13 13 C14 16, 16 17, 18 21 C20 16, 18 13, 11 10Z" fill="#5a7a3a" opacity="0.85"/>
+                <line x1="14" y1="8" x2="14" y2="26" stroke="#5a7a3a" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-name">Glamping lubito</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="../Planes/planes.html">Planes</a></li>
+            <li><a href="#">Experiencias</a></li>
+            <li><a href="#">Reservar</a></li>
+        </ul>
+
+        <button class="hamburger" id="ham" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MENÚ MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="../Planes/planes.html">Planes</a></li>
+            <li><a href="#">Experiencias</a></li>
+            <li><a href="#">Reservar</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="ubicacion">ANTIOQUIA · COLOMBIA</span>
+
+            <h1>
+                Donde la naturaleza
+                <span>te abraza de noche</span>
+            </h1>
+
+            <p>
+                Escapa de la rutina y descubre un refugio entre montañas. 
+                Disfruta del confort, la tranquilidad y la magia de reconectar con la naturaleza.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Reservar ahora</a>
+                <a href="../Planes/planes.html" class="btn-secondary">Ver planes</a>
+            </div>
+
+            <div class="scroll">
+                <span class="scroll-label">DESLIZA</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <!--<section class="stats">
+        <div class="stat-item">
+            <div class="stat-number">40</div>
+            <div class="stat-label">hectáreas</div>
+            <div class="stat-sub">de bosque nativo</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Planes</div>
+            <div class="stat-sub">únicos y exclusivos</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">especies</div>
+            <div class="stat-sub">de aves y flora</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">5<span class="stat-star">★</span></div>
+            <div class="stat-label">calificación</div>
+            <div class="stat-sub">en Google</div>
+        </div>
+    </section>-->
+
+    <!-- PLANES -->
+    <section class="planes">
+        <div class="planes-header">
+            <span>NUESTROS PLANES PRINCIPALES</span>
+
+            <h2>
+                Disfruta nuestros planes con<br>
+                <em>el sonido relajante del agua</em>
+            </h2>
+        </div>
+
+        <div class="cards-planes">
+
+            <!-- Noche -->
+            <div class="card card-noche">
+                <div class="badge">Familiar</div>
+
+                <div class="icono">🌙</div>
+
+                <h3>Noche</h3>
+
+                <p>
+                    Regálate una pausa. Escucha el sonido del agua, respira aire puro y déjate abrazar por la tranquilidad de la naturaleza. Entre montañas, estrellas y momentos de paz, aquí encontrarás el descanso que mereces.
+                </p>
+
+                <div class="precio">
+                    <span>Desde</span>
+                    <h4>$200.000<span>/noche</span></h4>
+                </div>
+
+                <div class="capacidad">
+                    👥 hasta 4
+                </div>
+            </div>
+
+            <!-- Ocasional -->
+            <div class="card card-ocasional">
+                <div class="badge">Más popular</div>
+
+                <div class="icono">🔥</div>
+
+                <h3>Ocasional</h3>
+
+                <p>
+                    Disfruta de glamping Lubito a tu ritmo. Ya sea por unas horas o durante toda la experiencia, encontrarás el espacio perfecto para desconectarte de la rutina y reconectar con la tranquilidad de la naturaleza.
+                </p>
+
+                <div class="precio">
+                    <span>Desde</span>
+                    <h4>$120.000<span>/por horas</span></h4>
+                </div>
+
+                <div class="capacidad">
+                    👥 hasta 2
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="lubito-hero">
+        <div class="lubito-content">
+            <h2 class="lubito-title">
+                Cada noche en Lubito
+                <span class="lubito-italic">es inolvidable</span>
+            </h2>
+            <p class="lubito-sub">
+                Pocas plazas disponibles cada fin de semana. Reserva con anticipación y asegura tu escapada.
+            </p>
+            <a href="#" class="lubito-btn">Ver disponibilidad →</a>
+        </div>
+    </section>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/573234875109" target="_blank" class="whatsapp-flotante">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="lubito-footer">
+        <div class="footer-content">
+
+            <div class="footer-icon">🌿</div>
+
+            <div class="footer-brand">
+                <span class="footer-logo">Glamping lubito</span>
+                <p class="footer-location">Retiro, Antioquia · Colombia</p>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-contact">
+                <a href="tel:+573234875109" class="contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8734a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/>
+                    </svg>
+                    +57 323 487 5109
+                </a>
+                <span class="contact-dot">·</span>
+                <a href="mailto:hola@lubito.co" class="contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c084b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    lubitoglampig@gmail.com
+                </a>
+                <span class="contact-dot">·</span>
+                <span class="contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8734a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Vereda Lejos del nido, Retiro, Antioquia
+                </span>
+            </div>
+
+            <p class="footer-copy">© 2025 Glamping lubito · Todos los derechos reservados</p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Planes</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!---Favicon-->
+    <link rel="icon" href="IMG/Logo.jpeg" type="image/x-icon">
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="brand">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 4 C10 8, 6 10, 8 16 C10 12, 13 11, 14 8 C15 11, 18 12, 20 16 C22 10, 18 8, 14 4Z" fill="#7a9a5a"/>
+                <path d="M11 10 C8 13, 6 16, 8 21 C10 17, 12 16, 13 13 C14 16, 16 17, 18 21 C20 16, 18 13, 11 10Z" fill="#5a7a3a" opacity="0.85"/>
+                <line x1="14" y1="8" x2="14" y2="26" stroke="#5a7a3a" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-name">Glamping lubito</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="../Principal/index.html" class="active">Inicio</a></li>
+            <li><a href="../Planes/planes.html">Planes</a></li>
+            <li><a href="#">Experiencias</a></li>
+            <li><a href="#">Reservar</a></li>
+        </ul>
+
+        <button class="hamburger" id="ham" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MENÚ MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="/Principal/index.html" class="active">Inici</a></li>
+            <li><a href="../Planes/planes.html">Planes</a></li>
+            <li><a href="#">Experiencias</a></li>
+            <li><a href="#">Reservar</a></li>
+        </ul>
+    </div>
+
+    <!-- PLANES -->
+     <!-- SECCIÓN PLANES -->
+<section class="planes-section">
+    <div class="planes-header">
+        <p class="planes-label">PLANES</p>
+        <h2 class="planes-title">Elige tu <em>plan</em></h2>
+        <p class="planes-subtitle">Todos incluyen: Parqueadero, wifi, agua caliente, zona de asados y zona de fogatas.</p>
+    </div>
+
+    <div class="planes-lista">
+
+        <!-- PLAN 1 -->
+        <div class="plan-row">
+            <div class="plan-card" style="background: #3b2575;">
+                <span class="card-badge">Familiar</span>
+                <div class="card-emoji">🌙</div>
+                <h2 class="card-title">Noche </h2>
+                <p class="card-desc">Duerme bajo un cielo estrellado y déjate envolver por la magia de nuestro lago y la tranquilidad de la naturaleza.</p>
+                <p class="card-price-label">Por noche desde</p>
+                <p class="card-price">$200.000</p>
+            </div>
+            <div class="plan-includes">
+                <p class="includes-label">INCLUYE</p>
+                <ul class="includes-list">
+                    <li>Televisor</li>
+                    <li>Jacuzzi exterior</li>
+                    <li>Bafle</li>
+                    <li>Fogata</li>
+                </ul>
+                <p class="plan-capacity"><i class="fa-solid fa-user-group"></i> Hasta 4 personas</p>
+                <a href="https://wa.me/573234875109" target="_blank" class="btn-reservar" style="background:#c8b0ff; color:#1a0e30;">Reservar este plan →</a>
+            </div>
+        </div>
+
+        <!-- PLAN 2 -->
+        <div class="plan-row">
+            <div class="plan-card" style="background:  rgb(83, 11, 11);">
+                <span class="card-badge">Más popular</span>
+                <div class="card-emoji">🔥</div>
+                <h2 class="card-title">Ocasional</h2>
+                <p class="card-desc">Refugio de madera rodeado de árboles centenarios con sendero privado al río.</p>
+                <p class="card-price-label">Por noche desde</p>
+                <p class="card-price">$120.000</p>
+            </div>
+            <div class="plan-includes">
+                <p class="includes-label">INCLUYE</p>
+                <ul class="includes-list">
+                    <li>1 habitación</li>
+                    <li>Fogata privada</li>
+                    <li>Hamacas</li>
+                    <li>Cocina rústica</li>
+                </ul>
+                <p class="plan-capacity"><i class="fa-solid fa-user-group"></i> Hasta 2 personas</p>
+                <a href="https://wa.me/573234875109" target="_blank" class="btn-reservar" style="background:#4ade80; color:#0a1f14;">Reservar este plan →</a>
+            </div>
+        </div>
+
+        <!-- PLAN 3 -->
+        <div class="plan-row">
+            <div class="plan-card" style="background: #3d2010;">
+                <span class="card-badge">Decoración Romántica</span>
+                <div class="card-emoji">❤️</div>
+                <h2 class="card-title">Noche Romántica</h2>
+                <p class="card-desc">Una experiencia íntima con fogata privada, cielo abierto y total inmersión en la naturaleza.</p>
+                <p class="card-price-label">Por noche desde</p>
+                <p class="card-price">$260.000</p>
+            </div>
+            <div class="plan-includes">
+                <p class="includes-label">INCLUYE</p>
+                <ul class="includes-list">
+                    <li>Cama queen</li>
+                    <li>Fogata privada</li>
+                    <li>Kit de s'mores</li>
+                    <li>Sillas Adirondack</li>
+                </ul>
+                <p class="plan-capacity"><i class="fa-solid fa-user-group"></i> Hasta 2 personas</p>
+                <a href="https://wa.me/573234875109" target="_blank" class="btn-reservar" style="background:#fb923c; color:#1a0800;">Reservar este plan →</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+   <!-- WHATSAPP -->
+    <a href="https://wa.me/573234875109" target="_blank" class="whatsapp-flotante">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <!-- FOOTER -->
+    <footer class="lubito-footer">
+        <div class="footer-content">
+
+            <div class="footer-icon">🌿</div>
+
+            <div class="footer-brand">
+                <span class="footer-logo">Glamping lubito</span>
+                <p class="footer-location">Retiro, Antioquia · Colombia</p>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-contact">
+                <a href="tel:+573234875109" class="contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8734a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/>
+                    </svg>
+                    +57 323 487 5109
+                </a>
+                <span class="contact-dot">·</span>
+                <a href="mailto:hola@lubito.co" class="contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c084b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    hola@lubito.co
+                </a>
+                <span class="contact-dot">·</span>
+                <span class="contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8734a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Vereda Lejos del nido, Retiro, Antioquia
+                </span>
+            </div>
+
+            <p class="footer-copy">© 2025 Glamping lubito · Todos los derechos reservados</p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
