@@ -14,3 +14,9 @@ const ham = document.getElementById('ham');
         menu.classList.remove('open');
       });
     });
+
+// Función para redirigir a la página de reservas con el plan seleccionado
+function irAReservar(plan) {
+    localStorage.setItem('planSeleccionado', plan);
+    window.location.href = '/reservas.html';
+}

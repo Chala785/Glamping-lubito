@@ -16,9 +16,9 @@ menu.querySelectorAll('a').forEach(link => {
 
 // Precios de planes
 const precios = {
-    domo:   200000,
-    cabana: 120000,
-    tienda: 260000
+    noche:   200000,
+    ocasional: 120000,
+    romantica: 260000
 };
 
 // Precios de addons
@@ -150,3 +150,16 @@ function enviarReserva() {
     document.getElementById('confirmacion').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Auto-seleccionar plan si viene desde planes.html
+window.addEventListener('DOMContentLoaded', () => {
+    const plan = localStorage.getItem('planSeleccionado');
+    if (plan) {
+        const card = document.querySelector(`#reserva-grid .card[data-value="${plan}"]`);
+        if (card) {
+            selectCard(card, 'reserva-grid');
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        localStorage.removeItem('planSeleccionado');
+    }
+});
