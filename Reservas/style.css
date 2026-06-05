@@ -383,6 +383,45 @@ body {
     .data-row-2 { grid-template-columns: 1fr; }
   }
 
+  /* RESUMEN */
+.resumen-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 28px 24px;
+}
+
+.resumen-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.resumen-linea span:last-child {
+    color: var(--text-primary);
+}
+
+.resumen-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 16px 0;
+}
+
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    color: var(--accent);
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+  
   /* SUBMIT */
   .submit-area {
     margin-top: 40px;
@@ -426,6 +465,99 @@ body {
     color: var(--text-muted);
     font-weight: 300;
   }
+
+  /* CONFIRMACIÓN */
+#confirmacion {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.confirm-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.confirm-titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.confirm-texto {
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.confirm-texto strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.confirm-texto em {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--accent);
+}
+
+.confirm-resumen {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 32px 24px;
+    margin: 32px auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.conf-linea {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+
+.conf-linea span:last-child {
+    color: var(--text-primary);
+}
+
+.conf-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 16px 0;
+}
+
+.conf-total {
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--accent) !important;
+}
+
+.conf-total span {
+    color: var(--accent) !important;
+}
+
+.conf-volver {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+}
+
+.conf-volver:hover {
+    color: var(--accent);
+}
 
 
 /* ── WHATSAPP ── */
