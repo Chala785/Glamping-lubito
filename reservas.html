@@ -1,105 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Planes</title>
     <!--CSS-->
     <link rel="stylesheet" href="/Reservas/style.css">
+    <!--GLOBAL-->
+    <link rel="stylesheet" href="/Assets/global.css">
     <!---Favicon-->
-    <link rel="icon" href="/Assets/Logo.jpeg" type="image/x-icon">
+    <link rel="icon" href="/Assets/Imagenes/Logo.jpeg" type="image/x-icon">
     <!-- ICONOS -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <a href="#" class="brand">
-            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 4 C10 8, 6 10, 8 16 C10 12, 13 11, 14 8 C15 11, 18 12, 20 16 C22 10, 18 8, 14 4Z" fill="#7a9a5a"/>
-                <path d="M11 10 C8 13, 6 16, 8 21 C10 17, 12 16, 13 13 C14 16, 16 17, 18 21 C20 16, 18 13, 11 10Z" fill="#5a7a3a" opacity="0.85"/>
-                <line x1="14" y1="8" x2="14" y2="26" stroke="#5a7a3a" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            <span class="brand-name">Glamping lubito</span>
-        </a>
+    <div id="navbar"></div>
 
-        <ul class="nav-links">
-            <li><a href="/index.html" >Inicio</a></li>
-            <li><a href="/planes.html">Planes</a></li>
-            <li><a href="#">Experiencias</a></li>
-            <li><a href="#" class="active">Reservar</a></li>
-        </ul>
+    <!-- RESERVAS -->
+    <div class="container">
 
-        <button class="hamburger" id="ham" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+        <p class="eyebrow">Tu Escapada</p>
+        <h1>Haz tu <em>reservación</em></h1>
 
-    <!-- MENÚ MOBILE -->
-    <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/planes.html">Planes</a></li>
-            <li><a href="#">Experiencias</a></li>
-            <li><a href="/reservas.html" class="active">Reservar</a></li>
-        </ul>
+        <!-- STEP 1 -->
+        <div class="section">
+            <p class="section-title"><span class="num">1</span> · Elige tu alojamiento</p>
+            <div class="section-divider"></div>
+            <div class="cards-grid" id="alojamiento-grid">
+                <div class="card" data-value="domo" onclick="selectCard(this, 'alojamiento-grid')">
+                    <span class="card-emoji">🌙</span>
+                    <div class="card-name">Domo Estelar</div>
+                    <div class="card-price">$320.000/noche</div>
+                </div>
+                <div class="card" data-value="cabana" onclick="selectCard(this, 'alojamiento-grid')">
+                    <span class="card-emoji">🌲</span>
+                    <div class="card-name">Cabaña del Bosque</div>
+                    <div class="card-price">$280.000/noche</div>
+                </div>
+                <div class="card" data-value="tienda" onclick="selectCard(this, 'alojamiento-grid')">
+                    <span class="card-emoji">⛺</span>
+                    <div class="card-name">Tienda Safari</div>
+                    <div class="card-price">$195.000/noche</div>
+                </div>
+                <div class="card" data-value="arbol" onclick="selectCard(this, 'alojamiento-grid')">
+                    <span class="card-emoji">🏠</span>
+                    <div class="card-name">Casa en el Árbol</div>
+                    <div class="card-price">$380.000/noche</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="section">
+            <p class="section-title"><span class="num">2</span> · Fechas y huéspedes</p>
+            <div class="section-divider"></div>
+            <div class="dates-grid">
+                <div class="field-group">
+                    <label class="field-label">Llegada</label>
+                    <input type="date" id="llegada">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Salida</label>
+                    <input type="date" id="salida">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Huéspedes</label>
+                    <input type="number" id="huespedes" value="1" min="1" max="10">
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="section">
+            <p class="section-title"><span class="num">3</span> · Servicios adicionales <span
+                    class="optional-tag">(opcional)</span></p>
+            <div class="section-divider"></div>
+            <div class="cards-grid" id="servicios-grid">
+                <div class="addon-card" onclick="toggleAddon(this)">
+                    <span class="addon-emoji">🍳</span>
+                    <div class="addon-info">
+                        <div class="addon-name">Desayuno campestre</div>
+                        <div class="addon-price">$45.000</div>
+                    </div>
+                </div>
+                <div class="addon-card" onclick="toggleAddon(this)">
+                    <span class="addon-emoji">🔥</span>
+                    <div class="addon-info">
+                        <div class="addon-name">Kit fogata romántica</div>
+                        <div class="addon-price">$35.000</div>
+                    </div>
+                </div>
+                <div class="addon-card" onclick="toggleAddon(this)">
+                    <span class="addon-emoji">🦋</span>
+                    <div class="addon-info">
+                        <div class="addon-name">Masaje en la naturaleza</div>
+                        <div class="addon-price">$120.000</div>
+                    </div>
+                </div>
+                <div class="addon-card" onclick="toggleAddon(this)">
+                    <span class="addon-emoji">📷</span>
+                    <div class="addon-info">
+                        <div class="addon-name">Sesión fotográfica</div>
+                        <div class="addon-price">$80.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="section">
+            <p class="section-title"><span class="num">4</span> · Tus datos</p>
+            <div class="section-divider"></div>
+            <div class="data-grid">
+                <div class="field-group">
+                    <label class="field-label">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="María García">
+                </div>
+                <div class="data-row-2">
+                    <div class="field-group">
+                        <label class="field-label">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="tu@email.com">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" placeholder="+57 300…">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Mensaje o solicitud especial</label>
+                    <textarea id="mensaje" placeholder="¿Celebras algo especial? ¿Tienes alguna necesidad?"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="submit-area">
+            <button class="btn-submit" id="btn-submit">Selecciona un alojamiento</button>
+            <p class="submit-note">No se realiza ningún cobro ahora. Confirmaremos en menos de 24 h.</p>
+        </div>
+
     </div>
 
-    
 
-   <!-- WHATSAPP -->
+
+    <!-- WHATSAPP -->
     <a href="https://wa.me/573234875109" target="_blank" class="whatsapp-flotante">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
 
     <!-- FOOTER -->
-    <footer class="lubito-footer">
-        <div class="footer-content">
-
-            <div class="footer-icon">🌿</div>
-
-            <div class="footer-brand">
-                <span class="footer-logo">Glamping lubito</span>
-                <p class="footer-location">Retiro, Antioquia · Colombia</p>
-            </div>
-
-            <div class="footer-divider"></div>
-
-            <div class="footer-contact">
-                <a href="tel:+573234875109" class="contact-item">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8734a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/>
-                    </svg>
-                    +57 323 487 5109
-                </a>
-                <span class="contact-dot">·</span>
-                <a href="mailto:hola@lubito.co" class="contact-item">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c084b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                    </svg>
-                    hola@lubito.co
-                </a>
-                <span class="contact-dot">·</span>
-                <span class="contact-item">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8734a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    Vereda Lejos del nido, Retiro, Antioquia
-                </span>
-            </div>
-
-            <p class="footer-copy">© 2025 Glamping lubito · Todos los derechos reservados</p>
-
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="/Planes/script.js"></script>
+    <script src="/Assets/global.js"></script>
 
 </body>
-</html>
 
+</html>
