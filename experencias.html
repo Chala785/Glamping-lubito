@@ -6,7 +6,7 @@
     <title>Glamping Lubito</title>
     <meta name="description" content="Glamping Lubito — Vive una experiencia única en medio del bosque en Retiro, Antioquia. Domos, cabañas y naturaleza a 40 minutos de Medellín.">
     <!--CSS-->
-    <link rel="stylesheet" href="/Principal/style.css">
+    <link rel="stylesheet" href="/Experiencias/style.css">
     <!---Favicon-->
     <link rel="icon" href="/Assets//Imagenes/Logo.jpeg" type="image/x-icon">
     <!-- ICONOS -->
@@ -28,9 +28,9 @@
         </a>
 
         <ul class="nav-links">
-            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="/index.html">Inicio</a></li>
             <li><a href="/planes.html">Planes</a></li>
-            <li><a href="/experencias.html">Experiencias</a></li>
+            <li><a href="/experencias.html" class="active">Experiencias</a></li>
             <li><a href="/reservas.html">Reservar</a></li>
         </ul>
 
@@ -44,138 +44,106 @@
     <!-- MENÚ MOBILE -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="/planes.html" class="active">Inicio</a></li>
+            <li><a href="/planes.html">Inicio</a></li>
             <li><a href="/planes.html">Planes</a></li>
-            <li><a href="/experencias.html">Experiencias</a></li>
+            <li><a href="/experencias.html" class="active">Experiencias</a></li>
             <li><a href="/reservas.html">Reservar</a></li>
         </ul>
     </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <span class="ubicacion">ANTIOQUIA · COLOMBIA</span>
+    <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">En Glamping Lubito</p>
+      <h2 class="hero-title">Cada detalle es una <em>experiencia</em></h2>
+      <p class="hero-sub">
+        Diseñamos cada rincón para que la conexión con la naturaleza sea<br>
+        profunda, sensorial y memorable.
+      </p>
+    </div>
+  </section>
 
-            <h1>
-                Donde la naturaleza
-                <span>te abraza de noche</span>
-            </h1>
+  <!-- ── COLLAGE ── -->
+  <section class="collage-wrapper">
+    <div class="collage">
 
-            <p>
-                Escapa de la rutina y descubre un refugio entre montañas. 
-                Disfruta del confort, la tranquilidad y la magia de reconectar con la naturaleza.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="/reservas.html" class="btn-primary">Reservar ahora</a>
-                <a href="/planes.html" class="btn-secondary">Ver planes</a>
-            </div>
-
-            <div class="scroll">
-                <span class="scroll-label">DESLIZA</span>
-                <div class="scroll-line"></div>
-            </div>
+      <!-- Foto 1 -->
+      <div class="collage-item">
+        <!-- Reemplaza el src con tu imagen: <img src="foto1.jpg" alt="..."> -->
+        <div class="collage-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <img src="/Experiencias/IMG/4.jpeg" alt="Glamping Suite">
         </div>
-    </section>
+        <span class="collage-label">Glamping</span>
+      </div>
 
-    <!-- STATS -->
-    <!--<section class="stats">
-        <div class="stat-item">
-            <div class="stat-number">40</div>
-            <div class="stat-label">hectáreas</div>
-            <div class="stat-sub">de bosque nativo</div>
+      <!-- Foto 2 -->
+      <div class="collage-item">
+        <div class="collage-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <img src="/Experiencias/IMG/2.jpeg" alt="Momentos">
         </div>
-        <div class="stat-item">
-            <div class="stat-number">2</div>
-            <div class="stat-label">Planes</div>
-            <div class="stat-sub">únicos y exclusivos</div>
+        <span class="collage-label">Momentos</span>
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="collage-item">
+        <div class="collage-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <img src="/Experiencias/IMG/3.jpeg" alt="Jacuzzi">
         </div>
-        <div class="stat-item">
-            <div class="stat-number">200+</div>
-            <div class="stat-label">especies</div>
-            <div class="stat-sub">de aves y flora</div>
+        <span class="collage-label">Jacuzzi</span>
+      </div>
+
+      <!-- Foto 4 -->
+      <div class="collage-item">
+        <div class="collage-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <img src="/Experiencias/IMG/1.jpeg" alt="Glamping Suite">
         </div>
-        <div class="stat-item">
-            <div class="stat-number">5<span class="stat-star">★</span></div>
-            <div class="stat-label">calificación</div>
-            <div class="stat-sub">en Google</div>
+        <span class="collage-label">Naturaleza</span>
+      </div>
+
+      <!-- Foto 5 -->
+      <div class="collage-item">
+        <div class="collage-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <img src="/Experiencias/IMG/5.jpeg" alt="Fogón">
         </div>
-    </section>-->
+        <span class="collage-label">Decoración</span>
+      </div>
 
-    <!-- PLANES -->
-    <section class="planes">
-        <div class="planes-header">
-            <span>NUESTROS PLANES PRINCIPALES</span>
-
-            <h2>
-                Disfruta nuestros planes con<br>
-                <em>el sonido relajante del agua</em>
-            </h2>
+      <!-- Foto 6 – franja panorámica -->
+      <div class="collage-item">
+        <div class="collage-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <img src="/Experiencias/IMG/.jpeg" alt="Vista Panorámica">
         </div>
+        <span class="collage-label">Vista Panorámica</span>
+      </div>
 
-        <div class="cards-planes">
+    </div>
+  </section>
 
-            <!-- Noche -->
-            <div class="card card-noche">
-                <div class="badge">Familiar</div>
-
-                <div class="icono">🌙</div>
-
-                <h3>Noche</h3>
-
-                <p>
-                    Regálate una pausa. Escucha el sonido del agua, respira aire puro y déjate abrazar por la tranquilidad de la naturaleza. Entre montañas, estrellas y momentos de paz, aquí encontrarás el descanso que mereces.
-                </p>
-
-                <div class="precio">
-                    <span>Desde</span>
-                    <h4>$200.000<span>/noche</span></h4>
-                </div>
-
-                <div class="capacidad">
-                    👥 hasta 4
-                </div>
-            </div>
-
-            <!-- Ocasional -->
-            <div class="card card-ocasional">
-                <div class="badge">Más popular</div>
-
-                <div class="icono">🔥</div>
-
-                <h3>Ocasional</h3>
-
-                <p>
-                    Disfruta de glamping Lubito a tu ritmo. Ya sea por unas horas o durante toda la experiencia, encontrarás el espacio perfecto para desconectarte de la rutina y reconectar con la tranquilidad de la naturaleza.
-                </p>
-
-                <div class="precio">
-                    <span>Desde</span>
-                    <h4>$120.000<span>/por horas</span></h4>
-                </div>
-
-                <div class="capacidad">
-                    👥 hasta 2
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="lubito-hero">
-        <div class="lubito-content">
-            <h2 class="lubito-title">
-                Cada noche en Lubito
-                <span class="lubito-italic">es inolvidable</span>
-            </h2>
-            <p class="lubito-sub">
-                Pocas plazas disponibles cada fin de semana. Reserva con anticipación y asegura tu escapada.
-            </p>
-            <a href="#" class="lubito-btn">Ver disponibilidad →</a>
-        </div>
-    </section>
-
+   
     <!-- WHATSAPP -->
     <a href="https://wa.me/573234875109" target="_blank" class="whatsapp-flotante">
         <i class="fa-brands fa-whatsapp"></i>

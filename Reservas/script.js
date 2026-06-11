@@ -137,7 +137,7 @@ function enviarReserva() {
     // Rellenar confirmación
     document.getElementById('conf-nombre').textContent   = nombre;
     document.getElementById('conf-plan').textContent     = planNombre;
-    document.getElementById('conf-email').textContent    = email;
+    document.getElementById('conf-telefono').textContent = document.getElementById('telefono').value.trim() || email;
     document.getElementById('conf-aloj').textContent     = `${planNombre} ${planEmoji}`;
     document.getElementById('conf-llegada').textContent  = llegada;
     document.getElementById('conf-salida').textContent   = salida;
